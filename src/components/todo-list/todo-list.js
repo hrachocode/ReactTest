@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoListItem from '../todo-liat-item'
 import './todo-list.css'
+
 const showListItem = (item) => {
   const { id, ...itemProps } = item;
   return (
@@ -9,6 +10,7 @@ const showListItem = (item) => {
     </li>
   )
 }
+
 const TodoList = ({ todos }) => {
   const element = todos.map(singleTodo => showListItem(singleTodo))
   return (
